@@ -1,10 +1,5 @@
 <?php   
-use  PHPMailer \ PHPMailer \ PHPMailer ;
-use  PHPMailer \ PHPMailer \ Exception ;
 
-require  'PHPMailer/Exception.php' ;
-require  'PHPMailer/PHPMailer.php' ;
-require  'PHPMailer/SMTP.php' ;
 
 class Consulta extends Controller{
     public function __construct(){
@@ -73,28 +68,8 @@ class Consulta extends Controller{
 
             $this->view->usuario=$usuario;
             $this->view->mensaje="Usuario actualizado correctamente";
-            $mail = new PHPMailer(true);
-            try {
-
-             $mail->SMTPDebug = 0;                      
-             $mail->isSMTP();                                          
-             $mail->Host       = 'smtp.gmail.com';                   
-             $mail->SMTPAuth   = true;                                  
-             $mail->Username   = 'mailermvc1@gmail.com';                    
-             $mail->Password   = 'contrasena1';                              
-             $mail->SMTPSecure = 'tls';        
-             $mail->Port       = 587;                                   
-             $mail->setFrom('mailermvc1@gmail.com', 'Administrador de datos');
-             $mail->addAddress($_POST['email']);     
-             $mail->isHTML(true);                                
-             $mail->Subject = '¡Importantisimo! Nueva contraseña de acceso';
-             $mail->Body    = 'Hola, esta es tu nueva contraseña de acceso normal: '.$_POST['pw'].' y esta tu contraseña cifrada: '.$pw;
-   
-             $mail->send();
-              echo 'Se envio correctamente';
-            } catch (Exception $e) {
-              echo "Hubo un error al enviar el mensaje: {$mail->ErrorInfo}";
-            }
+         
+          
         }else{
             $this->view->mensaje="No se pudo actualizar el usuario";
         }
