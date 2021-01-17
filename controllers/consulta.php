@@ -34,7 +34,7 @@ class Consulta extends Controller{
     }
 
     function actualizarUsuario(){
-        session_start();
+        //session_start();
         $matricula=$_SESSION['id_verUsuario'];
         $username=$_POST['username'];
         $pw=hash("sha256",$_POST['pw']);
