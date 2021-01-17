@@ -1,5 +1,5 @@
 <?php
-    define('URL', 'https://oaxaqueando.herokuapp.com/');
+    define('URL', 'https://oaxaqueando5.cleverapps.io/');
     define('HOST', 'bdyzcfehrcomfhksbhmx-mysql.services.clever-cloud.com');
     define('DB', 'bdyzcfehrcomfhksbhmx');
     define('USER', 'up1bqfux0eibfreq');
