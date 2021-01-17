@@ -21,7 +21,7 @@ class Consulta extends Controller{
         $idUsuario=$param[0];
         $usuario=$this->model->getById($idUsuario);
 
-        //session_start();
+        session_start();
         $_SESSION['id_verUsuario']=$usuario->matricula;
         $this->view->usuario=$usuario;
         $this->view->mensaje="";
