@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width", initial-scale="1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Wishlist</title>
+    <title>Carrito de compras</title>
     <link  rel = "stylesheet" href ="public/css/estilacho.css">
 
 </head>
@@ -17,7 +17,7 @@
      ?>
     <div id="contenedor">
    
-    <h1 class="center">Wishlist</h1>
+    <h1 class="center">Carrito de compras</h1>
 
     <h1>Bienvenido <?php echo $_SESSION['user'];  ?></h1>
     <div id=respuesta class="center"></div>  
