@@ -7,7 +7,7 @@ botones.forEach(boton => {
         alert("Agregado a la Wishlist" + costo)
 
         //Solicitud AJAX
-        httpRequest("http://localhost/mvc2/lista/addart/" + matricula, function () {
+        httpRequest("http://app-a048003f-c2d8-447d-ae4d-61eaaa1eb11e.cleverapps.io/lista/addart/" + matricula, function () {
             //console.log(this.responseText);
            
 
