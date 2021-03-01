@@ -54,6 +54,9 @@
             <!--<td><a href="<?php echo constant ('URL').'consulta/addart/'.$usuario->matricula;?>"><img src="iconos/097-cart-10.png" width="50px" height="50px"></a></td>-->
             <!--<td><a href="<?php echo constant('URL').'consulta/eliminarUsuario/'.$usuario->matricula; ?>">Eliminar</a></td>-->
                 
+                <?php 
+                echo "Total: ". $total = $total+$usuario->a_materno;
+                ?> 
                 
             </tr>
             <?php } ?>
