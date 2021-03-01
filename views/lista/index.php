@@ -60,13 +60,13 @@
                 
             </tr>
             <?php } ?>
-                <?php 
-                echo "Total: ". $total;
-                ?> 
+                 
         </tbody>
     </table>
     </div>
-
+                <?php 
+                echo "Total: ". $total;
+                ?>
     <?php require 'views/footer.php'; ?>
     <script src="<?php echo constant ('URL'); ?>public/js/tula2.js"></script>
 </body>
