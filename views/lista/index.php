@@ -55,11 +55,14 @@
             <!--<td><a href="<?php echo constant('URL').'consulta/eliminarUsuario/'.$usuario->matricula; ?>">Eliminar</a></td>-->
                 
                 <?php 
-                echo "Total: ". $total = $total+$usuario->a_materno;
+                $total = $total+$usuario->a_materno;
                 ?> 
                 
             </tr>
             <?php } ?>
+                <?php 
+                echo "Total: ". $total;
+                ?> 
         </tbody>
     </table>
     </div>
