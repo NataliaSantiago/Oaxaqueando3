@@ -63,9 +63,11 @@
                  
         </tbody>
     </table>
+       <div id=tbody-usuarios>
         <?php 
            echo "Total: ". $total;
          ?>
+       </div>
     </div>
                
     <?php require 'views/footer.php'; ?>
